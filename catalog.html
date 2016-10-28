@@ -51,7 +51,7 @@
     </aside>
     
     <section>
-      <h2>сортировать:</h2>
+      <span>сортировать:</span>
       <a href="#">по цене</a>
       <a href="#">по типу</a>
       <a href="#">по названию</a>
@@ -114,10 +114,10 @@
       </article>
       
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>следующая</li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">следующая</a></li>
       </ul>
     </section>
   </main>
@@ -125,21 +125,6 @@
 
 <!--  начало футер-->
   <footer>
-    <div class="modal">
-      <form action="action">
-        <fieldset>
-          <legend>Напишите нам</legend>
-          <label for="name">Ваше имя:</label>
-          <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
-          <label for="mail">Ваш e-mail:</label>
-          <input id="mail" type="text" placeholder="Для отправки ответа">
-          <label for="textarea">Текст письма:</label>
-          <textarea id="textarea" placeholder="В свободной форме"></textarea>
-        </fieldset>
-        <button type="submit">Отправить</button>
-      </form>
-    </div>
-    
     <div class="map">
       <img src="map.jpeg" alt="map" width="1440" height="416">
       <div>
@@ -163,6 +148,23 @@
     </div>
   </footer>
 <!--  конец футер-->
+
+<!--  начало модальное окно-->
+    <div class="modal">
+      <form action="action">
+        <fieldset>
+          <legend>Напишите нам</legend>
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
+          <label for="mail">Ваш e-mail:</label>
+          <input id="mail" type="text" placeholder="Для отправки ответа">
+          <label for="textarea">Текст письма:</label>
+          <textarea id="textarea" placeholder="В свободной форме"></textarea>
+        </fieldset>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+<!--  конец модальное окно -->
  
   </body>
 </html>
