@@ -8,125 +8,154 @@
   <body>
   
 <!--  начало хэдер-->
-  <header>
-    <a href="#"><img src="img/index/logo.png" alt="логотип" width="160" height="65"></a>
-    <nav>
-      <ul>
-        <li><a href="#">студия</a></li>
-        <li><a href="#">клиенты</a></li>
-        <li><a href="#">магазин</a></li>
-        <li><a href="#">контакты</a></li>
-      </ul>
-    </nav>
-    <a href="#">корзина</a>
-    
-    <div class="slider">
-      <div class="slide">
-        <h2>Долго, дорого, скрупулезно.</h2>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-        <a href="img/index/ph-slider1.jpg">узнать больше</a>
+  <header class="index-header">
+    <div class="container">
+
+      <div class="top clearfix">
+        <div class="logo">
+          <a href="#">
+            <img src="img/index/logo.png" alt="логотип" width="160" height="65">
+          </a>
+        </div>
+        <nav class="index-nav">
+          <ul>
+            <li><a href="#">студия</a></li>
+            <li><a href="#">клиенты</a></li>
+            <li><a href="#">магазин</a></li>
+            <li><a href="#">контакты</a></li>
+          </ul>
+        </nav>
+        <div class="cart">
+          <a href="#">корзина</a>
+        </div>
       </div>
-      <div class="slide">
-        <h2>Любим математику как никто другой</h2>
-        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a href="img/index/ph-slider2.jpg">узнать больше</a>
+      
+      <div class="slider">
+        <div class="slide">
+          <h2>Долго, дорого, скрупулезно.</h2>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <a href="img/index/ph-slider1.jpg">узнать больше</a>
+        </div>
+<!--         <div class="slide">
+          <h2>Любим математику как никто другой</h2>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+          <a href="img/index/ph-slider2.jpg">узнать больше</a>
+        </div>
+        <div class="slide">
+          <h2>Только ночь, только хардкор</h2>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <a href="img/index/ph-slider3.jpg">узнать больше</a>
+        </div> -->
       </div>
-      <div class="slide">
-        <h2>Только ночь, только хардкор</h2>
-        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a href="img/index/ph-slider3.jpg">узнать больше</a>
-      </div>
+
     </div>
   </header>
 <!--  конец хэдер-->
 
 <!--  начало мэйн-->
-  <main>
-    <section class="services">
-      <article class="service">
-        <img src="img/index/ph-web.png" alt="веб-сайты" width="300" height="146">
-        <h3>веб-сайты</h3>
-        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        <a href="#">заказать</a>
-      </article>
-      <article class="service">
-        <img src="img/index/ph-app.png" alt="приложения" width="300" height="146">
-        <h3>приложения</h3>
-        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-        <a href="#">заказать</a>  
-      </article>
-      <article class="service">
-        <img src="img/index/ph-app.png" alt="презентации" width="300" height="146">
-        <h3>презентации</h3>
-        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-        <a href="#">заказать</a>      
-      </article>
-    </section>
-    
-    <section class="about-us">
-      <div class="left">
-        <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <p>Веб-сайтов любой сложности</p>
-        <p>Мобильных приложений для iOS и Android</p>
-        <p>Слайдшоу и видео для корпоративных презентаций</p>
+  <main class="index-main">
+    <div class="container">
+
+      <section class="services clearfix">
+        <article class="service">
+          <img src="img/index/ph-web.png" alt="веб-сайты" width="300" height="146">
+          <h3>веб-сайты</h3>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a href="#">заказать</a>
+        </article>
+        <article class="service">
+          <img src="img/index/ph-app.png" alt="приложения" width="300" height="146">
+          <h3>приложения</h3>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a href="#">заказать</a>  
+        </article>
+        <article class="service">
+          <img src="img/index/ph-pres.png" alt="презентации" width="300" height="146">
+          <h3>презентации</h3>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a href="#">заказать</a>      
+        </article>
+      </section>
+      
+      <section class="about_us clearfix">
+        <div class="left">
+          <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <p>Веб-сайтов любой сложности</p>
+          <p>Мобильных приложений для iOS и Android</p>
+          <p>Слайдшоу и видео для корпоративных презентаций</p>
+        </div>
+        <div class="right">
+          <img src="img/index/ph-nerds.jpg" alt="нёрдс" width="360" height="208">
+          <h3>с 2004 года Любим точность во всем:</h3>
+          <div>
+            <b>146%</b>
+            <p>Уровень самоотдачи</p>
+          </div>
+          <div>
+            <b>100%</b>
+            <p>Соблюдение сроков</p>
+          </div>
+          <div>
+            <b>50%</b>
+            <p>Минимальная предоплата</p>
+          </div>
+        </div>
+      </section>
+      
+      <div class="clients clearfix">
+        <div class="client">
+          <img src="img/index/logo1.png" alt="html academy" width="199" height="68">
+        </div>
+        <div class="client">
+          <img src="img/index/logo2.png" alt="borodinski" width="209" height="87">
+        </div>
+        <div class="client">
+          <img src="img/index/logo3.png" alt="pink" width="185" height="52">
+        </div>
+        <div class="client">
+          <img src="img/index/logo4.png" alt="mishka" width="173" height="84">
+        </div>
       </div>
-      <div class="right">
-        <img src="img/index/ph-nerds.jpg" alt="нёрдс" width="360" height="208">
-        <h3>с 2004 года Любим точность во всем:</h3>
-        <div>
-          <b>146%</b>
-          <p>Уровень самоотдачи</p>
-        </div>
-        <div>
-          <b>100%</b>
-          <p>Соблюдение сроков</p>
-        </div>
-        <div>
-          <b>50%</b>
-          <p>Минимальная предоплата</p>
-        </div>
-      </div>
-    </section>
-    
-    <div>
-      <img src="img/index/logo1.png" alt="html academy" width="199" height="68">
-      <img src="img/index/logo2.png" alt="borodinski" width="209" height="87">
-      <img src="img/index/logo3.png" alt="pink" width="185" height="52">
-      <img src="img/index/logo4.png" alt="mishka" width="173" height="84">
+
     </div>
   </main>
 <!--  конец мэйн-->
 
 <!--  начало футер-->
-  <footer>
-    <div class="map">
-      <img src="map.jpeg" alt="map" width="1440" height="416">
-      <div>
+  <footer class="index-footer">
+    <div class="container">
+
+      <div class="map">
+        <img src="" alt="map" width="1440" height="416">
+      </div>
+
+      <div class="contacts">
         <h3>NЁRDS DESIGN STUDIO</h3>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
         <a href="#">напишите нам</a>
       </div>
-    </div>
-    
-    <div class="social">
-      <div>
-        <a href="#">vk</a>
-        <a href="#">fb</a>
-        <a href="#">insta</a>
+      
+      <div class="social clearfix">
+        <div class="left">
+          <a href="#">vk</a>
+          <a href="#">fb</a>
+          <a href="#">insta</a>
+        </div>
+        <div class="right">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
-      <div>
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+
     </div>
   </footer>
 <!--  конец футер-->
 
 <!--  начало модальное окно-->
-    <div class="modal">
+<!--     <div class="modal">
       <form action="action">
         <fieldset>
           <legend>Напишите нам</legend>
@@ -139,7 +168,7 @@
         </fieldset>
         <button type="submit">Отправить</button>
       </form>
-    </div>
+    </div> -->
 <!--  конец модальное окно -->
 
   </body>
