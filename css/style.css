@@ -89,7 +89,7 @@ h3 {
 }
 
 .service:last-child {
-  margin-right: 60px;
+  margin-right: 0;
 }
 
 .about_us {
@@ -115,9 +115,10 @@ h3 {
 }
 
 .client {
-  float: left;
+  display: inline-block;
   width: 260px;
-  margin-right: 40px;
+  margin-right: 36px;
+  vertical-align: middle;
   outline: 1px solid orange;
 }
 
@@ -167,33 +168,48 @@ h3 {
 .filter {
   float: left;
   width: 300px;
-  margin-right: 60px;
+  margin-right: 100px;
   outline: 1px solid yellow;
 }
 
 .templates {
   float: right;
-  width: 800px;
+  width: 760px;
 
   outline: 1px solid yellow;
 }
 
-.top {
+.sort {
+  margin-bottom: 56px;
   outline: 1px solid orange;
 }
 
 .template {
-  width: 360px;
-  /*margin-right: 40px;*/
   display: inline-block;
+  width: 360px;
+  margin-right: 36px;
+  margin-top: 35px;
   outline: 1px solid orange;
+}
+
+.template:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+.template:nth-of-type(-n+2) {
+  margin-top: 0;
 }
 
 .paginator {
+  margin-top: 60px;
   outline: 1px solid orange;
 }
 
 
+
+/*h1 {
+  outline: 1px solid orange;
+}*/
 
 
 
