@@ -25,7 +25,7 @@ h3 {
   color: #000000;
 }
 
-.clearfix {
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -111,13 +111,14 @@ h3 {
 
 .clients {
   /*margin-bottom: 80px;*/
+  font-size: 0;
   outline: 1px solid yellow;
 }
 
 .client {
   display: inline-block;
   width: 260px;
-  margin-right: 36px;
+  margin-right: 40px;
   vertical-align: middle;
   outline: 1px solid orange;
 }
@@ -175,7 +176,6 @@ h3 {
 .templates {
   float: right;
   width: 760px;
-
   outline: 1px solid yellow;
 }
 
@@ -184,10 +184,15 @@ h3 {
   outline: 1px solid orange;
 }
 
+.template-list {
+  font-size: 0;
+}
+
 .template {
+  font-size: 16px;
   display: inline-block;
   width: 360px;
-  margin-right: 36px;
+  margin-right: 40px;
   margin-top: 35px;
   outline: 1px solid orange;
 }
