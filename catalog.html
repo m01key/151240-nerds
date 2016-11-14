@@ -8,20 +8,20 @@
   <body>
   
 <!--  начало хэдер-->
-  <header class="index-header">
+  <header class="catalog-header header">
     <div class="container">
 
       <div class="top clearfix">
         <div class="logo">
-          <a href="#">
+          <a href="index.html">
             <img src="img/index/logo.png" alt="логотип" width="160" height="65">
           </a>
         </div>
-        <nav class="index-nav">
+        <nav class="main-nav">
           <ul>
-            <li><a href="#">студия</a></li>
+            <li><a href="index.html">студия</a></li>
             <li><a href="#">клиенты</a></li>
-            <li><a href="#">магазин</a></li>
+            <li><a class="active" href="#">магазин</a></li>
             <li><a href="#">контакты</a></li>
           </ul>
         </nav>
@@ -29,7 +29,10 @@
           <a href="#">корзина</a>
         </div>
       </div>
-      <h1>Магазин готовых шаблонов</h1>
+
+      <div class="down">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
 
     </div>
   </header>
@@ -41,117 +44,169 @@
     
       <aside class="filter">
         <form action="action">
-          <fieldset>
+
+
+<!--  \/ \/ \/ \/ \/ \/ \/   ФИЛЬТР   \/ \/ \/ \/ \/ \/   -->
+
+          <fieldset class="price">
             <legend>стоимость:</legend>
-            <div><!--здесь прокрутка цен--></div>
-            <label>от<input type="text" value="0"></label>
-            <label>до<input type="text" value="15000"></label>
+            <div class="range-toggles">
+              <div class="scale">
+                <div class="bar"></div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>  
+              </div>
+            </div>
+            <div class="range-price">
+              <label class="price-min">от
+              <input name="price-min" type="text" value="0">
+              </label>
+              <label class="price-max">до
+              <input name="price-max" type="text" value="15 000">
+              </label>
+            </div>
           </fieldset>
-          <fieldset>
+
+          <fieldset class="grid">
             <legend>сетка:</legend>
             <ul>
               <li>
-                <label><input type="radio" checked> Адаптивная </label>
+                <input id="radio1" type="radio" name="radio" checked>
+                <label for="radio1">Адаптивная</label>
               </li>
               <li>
-                <label><input type="radio"> Фиксированная </label>
+                <input id="radio2" type="radio" name="radio" >
+                <label for="radio2">Фиксированная</label>
               </li>
               <li>
-                <label><input type="radio"> Резиновая </label>
+                <input id="radio3" type="radio" name="radio">
+                <label for="radio3">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+
+          <fieldset class="features">
             <legend>особенности:</legend>
             <ul>
               <li>
-                <label><input type="checkbox" checked>Слайдер</label>
+                <input id="check1" type="checkbox" checked>
+                <label for="check1">Слайдер</label>
               </li>
               <li>
-                <label><input type="checkbox">Блок преимуществ</label>
+                <input id="check2" type="checkbox">
+                <label for="check2">Блок преимуществ</label>
               </li>
               <li>
-                <label><input type="checkbox" checked>Новости</label>
+                <input id="check3" type="checkbox" checked>
+                <label for="check3">Новости</label>
               </li>
               <li>
-                <label><input type="checkbox">Галерея</label>
+                <input id="check4" type="checkbox">
+                <label for="check4">Галерея</label>
               </li>
               <li>
-                <label><input type="checkbox">Корзина</label>
+                <input id="check5" type="checkbox">
+                <label for="check5">Корзина</label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">показать</button>
+
+          <button class="submit" type="submit">показать</button>
         </form>
       </aside>
-        
+
+  <!--  /\ /\ /\ /\ /\ /\   ФИЛЬТР   /\ /\ /\ /\ /\ /\   -->
+
+<!--  \/ \/ \/ \/ \/ \/ \/   ШАБЛОНЫ   \/ \/ \/ \/ \/ \/   -->
+
       <section class="templates">
-        <div class="sort">
-          <span>сортировать:</span>
-          <a href="#">по цене</a>
-          <a href="#">по типу</a>
-          <a href="#">по названию</a>
-          <span>стрелка вв</span>
-          <span>стрелка вниз</span>
+        <div class="sort clearfix">
+          <div class="left">
+            <span>сортировать:</span>
+          </div>
+          <div class="right">
+            <a href="#">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по названию</a>
+            <a class="up" href="#"></a>
+            <a class="down" href="#"></a>
+          </div>
         </div>
         
         <div class="template-list">
           <article class="template">
-            <img src="image.jpeg" alt="sedona" width="360" height="576">
-            <div>
-              <a href="#"><h3>sedona</h3></a>
+            <img src="img/catalog/sedona.jpg" alt="sedona" width="360" height="616">
+
+            <div class="template-price">
+              <h3>
+                <a href="#">sedona</a>
+              </h3>
               <p>Информационный сайт для туристов</p>
-              <a href="#">9900 руб.</a>
+              <a class="btn" href="#">9900 руб.</a>
             </div>
+
           </article>
           <article class="template">
-            <img src="image.jpeg" alt="pink app" width="360" height="576">
-            <div>
-              <a href="#"><h3>pink app</h3></a>
+            <img src="img/catalog/pink.jpg" alt="pink app" width="360" height="616">
+            <div class="template-price">
+              <h3>
+                <a href="#">pink app</a>
+              </h3>
               <p>Продуктовый лендинг приложения для IOS</p>
-              <a href="#">9900 руб.</a>
+              <a class="btn" href="#">9900 руб.</a>
             </div>
           </article>
           <article class="template">
-            <img src="image.jpeg" alt="barbershop" width="360" height="576">
-            <div>
-              <a href="#"><h3>barbershop</h3></a>
+            <img src="img/catalog/barbeshop.jpg" alt="barbershop" width="360" height="616">
+            <div class="template-price">
+              <h3>
+                <a href="#">barbershop</a>
+              </h3>
               <p>Сайт салоны красоты. Для мужчин, да.</p>
-              <a href="#">9900 руб.</a>
+              <a class="btn" href="#">9900 руб.</a>
             </div>
           </article>
           <article class="template">
-            <img src="image.jpeg" alt="mishka" width="360" height="576">
-            <div>
-              <a href="#"><h3>mishka</h3></a>
+            <img src="img/catalog/mishka.jpg" alt="mishka" width="360" height="616">
+            <div class="template-price">
+              <h3>
+                <a href="#">mishka</a>
+              </h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a href="#">9900 руб.</a>
+              <a class="btn" href="#">9900 руб.</a>
             </div>
           </article>
           <article class="template">
-            <img src="image.jpeg" alt="a plus" width="360" height="576">
-            <div>
-              <a href="#"><h3>a plus</h3></a>
+            <img src="img/catalog/teach.jpg" alt="teach" width="360" height="616">
+            <div class="template-price">
+              <h3>
+                <a href="#">a plus</a>
+              </h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <a href="#">9900 руб.</a>
+              <a class="btn" href="#">9900 руб.</a>
             </div>
           </article>
           <article class="template">
-            <img src="image.jpeg" alt="кваст" width="360" height="576">
-            <div>
-              <a href="#"><h3>кваст</h3></a>
+            <img src="img/catalog/kvast.jpg" alt="kvast" width="360" height="616">
+            <div class="template-price">
+              <h3>
+                <a href="#">кваст</a>
+              </h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="#">9900 руб.</a>
+              <a class="btn" href="#">9900 руб.</a>
             </div>
           </article>
         </div>
         
-        <ul class="paginator">
-          <li>1</li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">следующая</a></li>
-        </ul>
+<!--  /\ /\ /\ /\ /\ /\   ШАБЛОНЫ   /\ /\ /\ /\ /\ /\   -->
+
+
+        <div class="paginator">
+          <a class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">следующая</a>
+        </div>
       </section>
 
     </div>
@@ -163,24 +218,28 @@
     <div class="container">
 
       <div class="map">
-        <img src="" alt="map" width="1440" height="416">
+        <img src="img/index/ph-map.png" alt="интерактивная карта" width="1440" height="416">
+
+        <div class="contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
+          <a class="btn" href="#">напишите нам</a>
+        </div>
       </div>
 
-      <div class="contacts">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a href="#">напишите нам</a>
-      </div>
+
+
       
       <div class="social clearfix">
         <div class="left">
-          <a href="#">vk</a>
-          <a href="#">fb</a>
-          <a href="#">insta</a>
+          <a class="vk socBtn" href="#">vk</a>
+          <a class="fb socBtn" href="#">fb</a>
+          <a class="inst socBtn" href="#">inst</a>
         </div>
         <div class="right">
-          <h3>Давайте дружить, это выгодно!</h3>
+          <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
