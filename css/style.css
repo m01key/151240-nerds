@@ -436,32 +436,26 @@ fieldset {
 }
 
 .about_us .left p {
-   /*padding: 25px 0;*/
-
    margin-bottom: 38px;
 }
 
-.about_us .left p:first-child {
-   /*padding: 25px 0;*/
-   margin-bottom: 28px;
-}
-
-.about_us .left b {
+.about_us .left p b {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
 
-.about_us .left h3 {
+.about_us .left p:nth-child(3) {
+  margin-bottom: 25px;
+}
+
+.about_us .left p:nth-child(3) b {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
-  margin: 45px 0 20px;
-  /*margin-top: 165px;*/
 }
 
-.about_us .left p:nth-child(n+4) {
-   /*padding: 25px 0;*/
+.about_us .left .text {
    position: relative;
    font-size: 16px;
    line-height: 24px;
@@ -470,7 +464,7 @@ fieldset {
    padding-left: 40px;
 }
 
-.about_us .left p:nth-child(n+4)::before {
+.about_us .left .text::before {
   content: "";
   top: 11px;
   left: 0;
@@ -484,7 +478,7 @@ fieldset {
 .about_us .right {
   float: right;
   width: 360px;
-  padding-top: 42px;
+  padding-top: 50px;
   /*outline: 1px solid orange;*/
 }
 
@@ -519,7 +513,7 @@ margin-bottom: 15px;
 .clients {
   /*margin-bottom: 80px;*/
   font-size: 0;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   /*outline: 1px solid yellow;*/
 }
@@ -546,25 +540,31 @@ margin-bottom: 15px;
   opacity: 0.1;
 }
 
-.index-footer {
-  /*outline: 1px solid red;*/
+.contacts {
+  position: relative;
 }
 
 .index-footer .map {
-  /*background: #fff url(../img/index/ph-map.png);*/
-  position: relative;
-
-  /*outline: 1px solid blue;*/
+  background: url(../img/index/ph-map.png) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  max-width: 1440px;
+  height: 416px;
+  margin: 0 auto;
 }
 
-.index-footer .map img {
-  width: 1160px;
-}
+/*.index-footer .map img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}*/
 
-.contacts {
+
+.contacts .write_us {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  top: 55px;
+  left: 55px;
   width: 220px;
   padding: 47px 50px;
   background-color: #fff;
@@ -573,21 +573,28 @@ margin-bottom: 15px;
   /*outline: 1px solid yellow;*/
 }
 
-.contacts h3 {
+.contacts .write_us h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   margin: 0;
+  margin-bottom: 25px;
 }
 
-.contacts p {
+.contacts .write_us p {
   text-transform: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  margin: 0;
+  margin-bottom: 18px;
 }
 
-.contacts .btn {
+.contacts .write_us .btn {
   display: inline-block;
   width: 200px;
   padding: 16px 10px;
+  margin-top: 20px;
   background-color: #fb565a;
   font-size: 16px;
   line-height: 18px;
@@ -598,15 +605,23 @@ margin-bottom: 15px;
   text-decoration: none;
 }
 
+.contacts .write_us .btn:hover {
+  background-color: #e74246;
+}
 
+.contacts .write_us .btn:active {
+  box-shadow: inset 0 3px #c13135;
+  background-color: #d7373b;
+  color: rgba(255,255,255,0.3);
+}
 
 .social {
-  padding-top: 60px;
+  padding-top: 70px;
   /*outline: 1px solid yellow;*/
 }
 
 .social .left {
-  font-size: 0;
+  /*font-size: 0;*/
   float: left;
   width: 300px;
   margin-right: 100px;
@@ -615,46 +630,65 @@ margin-bottom: 15px;
 }
 
 .social .socBtn {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   margin-right: 8px;
   width: 78px;
   height: 78px;
-  background: #e1e1e1 url(../img/index/spritesheet.png) no-repeat;
   border-radius: 50%;
+  background-color: #e1e1e1;
+  text-align: center;
 
-  /*outline: 1px solid red;*/
+}
+
+.social .socBtn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -11px;
+  margin-left: -13px;
+  width: 26px;
+  height: 22px;
+  background: url(../img/index/spritesheet.png) no-repeat;
+}
+
+.social .vk::before {
+/*  width: 26px;
+  height: 15px;*/
+  background-position: -20px -460px;
+}
+
+.social .fb::before {
+/*  width: 12px;
+  height: 22px;*/
+  background-position: -14px -201px;
+}
+
+.social .inst::before {
+/*  width: 21px;
+  height: 21px;*/
+  background-position: -17px -263px;
 }
 
 .social .socBtn:hover {
   background-color: #e74246;
 }
 
-/* как сделать прозрачными только иконки, а не всего кругляшка? */
 .social .socBtn:active {
   background-color: #d7373b;
   box-shadow: inset 0 3px #c13135;
-  /*opacity: 0.3;*/
 }
 
-.social .vk {
-    background-position: 5px -431px;
-
-    /*outline: 1px solid blue;*/
-}
-
-.social .fb {
-    background-position: 12px -173px;
-}
-
-.social .inst {
-    background-position: 9px -236px;
+.social .socBtn:active::before {
+  opacity: 0.3;
 }
 
 .social .right {
   float: left;
   width: 560px;
-  padding-top: 9px;
+  padding-top: 5px;
   /*outline: 1px solid orange;*/
 }
 
@@ -1066,10 +1100,18 @@ legend {
   vertical-align: top;
   width: 360px;
   height: 616px;
-  /*background: red;*/
   margin-right: 40px;
   margin-top: 35px;
-  /*outline: 1px solid orange;*/
+}
+
+.template::before {
+  content: "";
+  display: block;
+  width: 360px;
+  height: 40px;
+  border-radius: 5px 5px 0 0;
+  background: #4d4d4d url(../img/catalog/browser.png) no-repeat;
+  opacity: 0.12;
 }
 
 .template:nth-of-type(2n) {
@@ -1083,6 +1125,7 @@ legend {
 .template img {
   width: 360px;
   height: 616px;
+  /*box-shadow: inset 30px 30px #000;*/
 }
 
 .template:hover {

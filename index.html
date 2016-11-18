@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   
@@ -115,10 +116,10 @@
         <div class="left">
           <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <h3>Выполняем заказы на разработку:</h3>
-          <p>Веб-сайтов любой сложности</p>
-          <p>Мобильных приложений для iOS и Android</p>
-          <p>Слайдшоу и видео для корпоративных презентаций</p>
+          <p><b>Выполняем заказы на разработку:</b></p>
+          <p class="text">Веб-сайтов любой сложности</p>
+          <p class="text">Мобильных приложений для iOS и Android</p>
+          <p class="text">Слайдшоу и видео для корпоративных презентаций</p>
         </div>
         <div class="right">
           <img src="img/index/ph-nerds.jpg" alt="нёрдс" width="360" height="208">
@@ -159,35 +160,32 @@
 
 <!--  начало футер-->
   <footer class="index-footer">
-    <div class="container">
 
-      <div class="map">
-        <img src="img/index/ph-map.png" alt="интерактивная карта" width="1440" height="416">
-
-        <div class="contacts">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>191186, Санкт-Петербург, <br>
-          ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn" href="#">напишите нам</a>
-        </div>
+    <div class="contacts">       
+      <div class="map" >
+<!--           <img src="img/index/ph-map.png" alt="интерактивная карта" width="1440" height="416"> -->
       </div>
+      <div class="write_us">
+        <h3>NЁRDS DESIGN STUDIO</h3>
+        <p>191186, Санкт-Петербург, <br>
+          ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn" href="#">напишите нам</a>
+      </div>
+    </div>
 
-
-
-      
+    <div class="container">
       <div class="social clearfix">
         <div class="left">
-          <a class="vk socBtn" href="#">vk</a>
-          <a class="fb socBtn" href="#">fb</a>
-          <a class="inst socBtn" href="#">inst</a>
+          <a class="vk socBtn" href="#"></a>
+          <a class="fb socBtn" href="#"></a>
+          <a class="inst socBtn" href="#"></a>
         </div>
         <div class="right">
           <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
-
     </div>
   </footer>
 <!--  конец футер-->
