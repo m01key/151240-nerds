@@ -737,11 +737,11 @@ legend {
 .price {
   margin: 0;
   padding: 0;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
 }
 
 .price legend {
-  margin-bottom: 52px;
+  margin-bottom: 47px;
 }
 
 .range-toggles {
@@ -750,7 +750,6 @@ legend {
   width: 218px;
   border-radius: 5px;
   margin-bottom: 15px;
-  /*height: 80px;*/
 }
 
 .range-toggles .scale {
@@ -762,7 +761,6 @@ legend {
 .range-toggles .bar {
   height: 2px;
   width: 140px;
-  /*margin-left: 20px;*/
   background-color: #00ca74;
 }
 
@@ -788,8 +786,8 @@ legend {
 
 .range-price {
   font-size: 0;
+  /*outline: 1px solid orange;*/
 
-  /*text-align: right;*/
 }
 
 .range-price label {
@@ -842,7 +840,7 @@ legend {
 .grid li,
 .features li {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   /*outline: 1px solid #fcd;*/
 }
@@ -1004,7 +1002,7 @@ legend {
 /* ---- сортировка ---- */
 
 .sort {
-  margin-bottom: 56px;
+  margin-bottom: 60px;
   font-size: 0;
   line-height: 0;
 
@@ -1019,13 +1017,13 @@ legend {
   float: right;
 }
 
-.sort span {
+.sort .left span {
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
 }
 
-.sort a {
+.sort .right a {
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -1054,21 +1052,21 @@ legend {
   color: rgba(0,0,0,1);
 }
 
-.sort .up {
-  display: inline-block;
-  background: url(../img/index/spritesheet.png) no-repeat;
-  width: 9px;
-  height: 9px;
-  background-position: -20px -415px;
-  opacity: 0.2;
-}
-
 .sort .down {
   display: inline-block;
   background: url(../img/index/spritesheet.png) no-repeat;
   width: 9px;
   height: 9px;
   background-position: -20px -366px;
+  opacity: 0.2;
+}
+
+.sort .up {
+  display: inline-block;
+  background: url(../img/index/spritesheet.png) no-repeat;
+  width: 9px;
+  height: 9px;
+  background-position: -20px -415px;
   opacity: 0.2;
 }
 
@@ -1099,19 +1097,29 @@ legend {
   display: inline-block;
   vertical-align: top;
   width: 360px;
-  height: 616px;
   margin-right: 40px;
   margin-top: 35px;
+  border-top: 40px solid rgba(77,77,77,0.12);
+  border-radius: 3px;
+  /*outline: solid 1px;*/
 }
 
-.template::before {
-  content: "";
-  display: block;
-  width: 360px;
-  height: 40px;
-  border-radius: 5px 5px 0 0;
-  background: #4d4d4d url(../img/catalog/browser.png) no-repeat;
-  opacity: 0.12;
+.template span {
+  position: absolute;
+  width: 100px;
+  height: 15px;
+  top: -27px;
+  left: 15px;
+  /*outline: solid 1px;*/
+}
+
+.template span i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .template:nth-of-type(2n) {
@@ -1124,12 +1132,13 @@ legend {
 
 .template img {
   width: 360px;
-  height: 616px;
+  display: block;
   /*box-shadow: inset 30px 30px #000;*/
 }
 
 .template:hover {
   box-shadow: 0 5px 20px rgba(0,1,1,0.25);
+  border-top: 40px solid rgba(77,77,77,1);
 }
 
 .template:hover .template-price {
@@ -1139,9 +1148,7 @@ legend {
 .template-price {
   position: absolute;
   bottom: 0;
-  /*left: 0;*/
   width: 220px;
-  /*height: 232px;*/
   background-color: #eee;
   text-align: center;
   padding: 29px 70px 44px;
