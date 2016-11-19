@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
   
@@ -125,15 +125,15 @@
           <img src="img/index/ph-nerds.jpg" alt="нёрдс" width="360" height="208">
           <p><b>с 2004 года Любим точность во всем:</b></p>
           <div class="percent">
-            <b>146%</b>
+            <b>146<span class="sup">%</span></b>
             <p>Уровень самоотдачи</p>
           </div>
           <div class="percent">
-            <b>100%</b>
+            <b>100<span class="sup">%</span></b>
             <p>Соблюдение сроков</p>
           </div>
           <div class="percent">
-            <b>50%</b>
+            <b>50<span class="sup">%</span></b>
             <p>Минимальная предоплата</p>
           </div>
         </div>
@@ -191,20 +191,36 @@
 <!--  конец футер-->
 
 <!--  начало модальное окно-->
-<!--     <div class="modal">
+    <div class="modal">
+      <i></i>
       <form action="action">
+
         <fieldset>
           <legend>Напишите нам</legend>
-          <label for="name">Ваше имя:</label>
-          <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
-          <label for="mail">Ваш e-mail:</label>
-          <input id="mail" type="text" placeholder="Для отправки ответа">
-          <label for="textarea">Текст письма:</label>
-          <textarea id="textarea" placeholder="В свободной форме"></textarea>
+
+          <div class="name-mail clearfix">
+            <div class="name">
+              <label for="name">Ваше имя:</label>
+              <input id="name" type="text" placeholder="Представьтесь, пожалуйста">      
+            </div>
+          
+            <div class="mail">
+              <label for="mail">Ваш e-mail:</label>
+              <input id="mail" type="email" placeholder="Для отправки ответа">
+            </div>
+          </div>
+
+          <div class="text">
+            <label for="textarea">Текст письма:</label>
+            <textarea id="textarea" placeholder="В свободной форме"></textarea>
+          </div>
+
         </fieldset>
-        <button type="submit">Отправить</button>
+
+        <button class="btn" type="submit">Отправить</button>
+
       </form>
-    </div> -->
+    </div>
 <!--  конец модальное окно -->
 
   </body>

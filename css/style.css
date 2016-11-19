@@ -257,6 +257,7 @@ fieldset {
   padding: 16px 0;
   text-align: center;
   border-radius: 5px;
+  vertical-align: top;
 }
 
 .slide a:hover {
@@ -483,24 +484,30 @@ fieldset {
 }
 
 .about_us .right img {
-margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .about_us .right p {
   text-align: center;
-  margin-bottom: 55px;
+  margin-bottom: 50px;
   /*font-weight: bold;*/
 }
 
 .about_us .percent {
   display: inline-block;
+  vertical-align: top;
   width: 115px;
-
 }
 
 .about_us .percent b {
   font-size: 45px;
   line-height: 10px;
+}
+
+.about_us .percent .sup {
+  vertical-align: super;
+  font-size: 26px;
+  font-weight: normal;
 }
 
 .about_us .percent p {
@@ -511,7 +518,6 @@ margin-bottom: 15px;
 }
 
 .clients {
-  /*margin-bottom: 80px;*/
   font-size: 0;
   margin-bottom: 30px;
 
@@ -523,7 +529,6 @@ margin-bottom: 15px;
   width: 260px;
   margin-right: 40px;
   vertical-align: middle;
-  /*outline: 1px solid orange;*/
   text-align: center;
   opacity: 0.2;
 }
@@ -603,6 +608,7 @@ margin-bottom: 15px;
   text-align: center;
   border-radius: 5px;
   text-decoration: none;
+  vertical-align: top;
 }
 
 .contacts .write_us .btn:hover {
@@ -613,6 +619,7 @@ margin-bottom: 15px;
   box-shadow: inset 0 3px #c13135;
   background-color: #d7373b;
   color: rgba(255,255,255,0.3);
+
 }
 
 .social {
@@ -976,11 +983,11 @@ legend {
   height: 50px;
   font-size: 16px;
   line-height: 18px;
-  /*padding: 16px 40px;*/
   background-color: #eee;
   border: none;
   text-transform: uppercase;
   font-weight: 500;
+  vertical-align: top;
 }
 
 .submit:hover {
@@ -1059,6 +1066,7 @@ legend {
   height: 9px;
   background-position: -20px -366px;
   opacity: 0.2;
+  vertical-align: bottom;
 }
 
 .sort .up {
@@ -1068,6 +1076,7 @@ legend {
   height: 9px;
   background-position: -20px -415px;
   opacity: 0.2;
+  vertical-align: bottom;
 }
 
 .sort .up:hover {
@@ -1115,6 +1124,7 @@ legend {
 
 .template span i {
   display: inline-block;
+  vertical-align: top;
   width: 14px;
   height: 14px;
   margin-right: 8px;
@@ -1183,6 +1193,7 @@ legend {
 .template-price .btn {
   display: inline-block;
   width: 200px;
+  vertical-align: top;
   /*height: 50px;*/
   padding: 16px 0;
   background-color: #fb565a;
@@ -1252,7 +1263,161 @@ legend {
 }
 
 
-/* ====== спрайты ======= */
+/* ======  модальное окно ====== */
+
+
+.modal {
+  position: fixed;
+  display: none;
+  width: 760px;
+  /*height: 590px;*/
+  text-transform: none;
+  padding: 70px 100px 85px;
+  /*outline: 1px solid;*/
+  top: 10px;
+  left: 80px;
+  background-color: #fff;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.75);
+}
+
+.modal i::before,
+.modal i::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  top: 70px;
+  right: 100px;
+  background-color: rgba(251,86,90,0.3);
+}
+
+.modal i::before {
+  transform: rotate(45deg);
+}
+
+.modal i::after {
+  transform: rotate(-45deg);
+}
+
+.modal i:hover::before,
+.modal i:hover::after {
+  background-color: rgba(251,86,90,1);
+}
+
+.modal i:active::before,
+.modal i:active::after {
+  background-color: rgba(251,86,90,0.1);
+}
+
+.modal fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+.modal legend {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.modal label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.modal .name-mail {
+  font-size: 0;
+  margin-bottom: 34px;
+  /*outline: 1px solid green;*/
+
+}
+
+/*.modal .name-mail .mail,
+.modal .name-mail .name {
+  display: inline-block;
+  width: 50%;
+  outline: 1px solid red;
+}*/
+
+.modal .name-mail .name {
+  float: left;
+  width: 360px;
+}
+
+.modal .name-mail .mail {
+  float: right;
+  width: 360px;
+}
+
+.modal .name-mail input[type="text"],
+.modal .name-mail input[type="email"] {
+  width: 326px;
+  height: 46px;
+  border: solid 2px #d7dcde;
+  border-radius: 3px;
+  padding: 1px 15px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
+}
+
+.modal .name-mail input[type="text"]:hover,
+.modal .name-mail input[type="email"]:hover,
+.modal .text textarea:hover {
+border: solid 2px #b4b9bb;
+}
+
+.modal .name-mail input[type="text"]:focus,
+.modal .name-mail input[type="email"]:focus,
+.modal .text textarea:focus  {
+border: solid 2px #000;
+}
+
+.modal .name-mail input[type="text"]:invalid,
+.modal .name-mail input[type="email"]:invalid {
+  border: solid 2px #e74246;
+  color: #e74246;
+}
+
+.modal .text textarea {
+  width: 760px;
+  height: 118px;
+  border: solid 2px #d7dcde;
+  border-radius: 3px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+
+.modal .btn {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 16px 0;
+  width: 260px;
+  background-color: #fb565a;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal .btn:hover {
+  background-color: #e74246;
+}
+
+.modal .btn:active {
+  box-shadow: inset 0 3px #c13135;
+  background-color: #d7373b;
+  color: rgba(255,255,255,0.3);
+}
+
+
+
+
+/* ======== спрайты ========= */
 
 
 /*
@@ -1316,10 +1481,4 @@ legend {
     background-position: -20px -464px;
 }
 */
-
-
-
-
-
-
 
