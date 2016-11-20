@@ -1268,16 +1268,16 @@ legend {
 
 .modal {
   position: fixed;
-  display: none;
+  /*display: none;*/
   width: 760px;
-  /*height: 590px;*/
+  margin-left: -480px;
   text-transform: none;
   padding: 70px 100px 85px;
-  /*outline: 1px solid;*/
-  top: 10px;
-  left: 80px;
+  top: 20px;
+  left: 50%;
   background-color: #fff;
   box-shadow: 0 25px 60px rgba(0,0,0,0.75);
+  /*margin: 0 auto;*/
 }
 
 .modal i::before,
