@@ -1,6 +1,4 @@
 
-/* ===================== ГЛАВНАЯ ======================= */
-
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
@@ -69,10 +67,6 @@ fieldset {
   padding-bottom: 6px;
 
   border-bottom: 2px solid #fb565a;
-}
-
-.header .top {
-  /*outline: 1px solid yellow;*/
 }
 
 .main-nav {
@@ -594,7 +588,6 @@ fieldset {
   margin: 0 auto;
 }*/
 
-
 .contacts .write_us {
   position: absolute;
   top: 55px;
@@ -663,7 +656,6 @@ fieldset {
 }
 
 .social .left {
-  /*font-size: 0;*/
   float: left;
   width: 300px;
   margin-right: 100px;
@@ -700,20 +692,14 @@ fieldset {
 }
 
 .social .vk::before {
-  /*  width: 26px;
-  height: 15px;*/
   background-position: -20px -460px;
 }
 
 .social .fb::before {
-  /*  width: 12px;
-  height: 22px;*/
   background-position: -14px -201px;
 }
 
 .social .inst::before {
-  /*  width: 21px;
-  height: 21px;*/
   background-position: -17px -263px;
 }
 
@@ -752,17 +738,14 @@ fieldset {
   text-transform: none;
 
   color: #444444;
-  /*margin-top: 10px;*/
 }
-
-
-
-/* ======================== КАТАЛОГ ======================== */
 
 .catalog-main {
   padding: 57px 0 60px;
   /*outline: 1px solid red;*/
 }
+
+/*  >>>>>>>>>>>>>  фильтр  --------------  */
 
 .filter {
   float: left;
@@ -882,7 +865,6 @@ legend {
   text-align: right;
   /*outline: 1px solid green;*/
 }
-
 
 .grid legend,
 .features legend {
@@ -1040,6 +1022,8 @@ legend {
 
   border: none;
   background-color: #eeeeee;
+
+  cursor: pointer;
 }
 
 .submit:hover {
@@ -1051,13 +1035,13 @@ legend {
   box-shadow: inset 0 3px #bfbfbf;
 }
 
+/*  ------------  фильтр  <<<<<<<<<<<<<<  */
 
 .templates {
   float: right;
   width: 760px;
   /*outline: 1px solid yellow;*/
 }
-
 
 .sort {
   margin-bottom: 60px;
@@ -1285,7 +1269,6 @@ legend {
   box-shadow: inset 0 3px #c13135;
 }
 
-
 .paginator {
   margin-top: 60px;
 
@@ -1311,7 +1294,6 @@ legend {
   background-color: #eeeeee;
 }
 
-
 .templates .paginator .active {
   padding: 13px 3px;
 
@@ -1334,8 +1316,7 @@ legend {
 }
 
 
-/* ======  модальное окно ====== */
-
+/*  ===========  модальное окно  ===========  */
 
 .modal {
   position: fixed;
@@ -1391,11 +1372,13 @@ legend {
 }
 
 .modal i::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal i::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal i:hover::before,
@@ -1484,6 +1467,8 @@ legend {
 
   border: solid 2px #d7dcde;
   border-radius: 3px;
+
+  resize: none;
 }
 
 .modal .btn {

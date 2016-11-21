@@ -52,6 +52,7 @@ form.addEventListener('submit', function(e) {
   if (!modalName.value || !modalMail.value || !modalText.value) {
     e.preventDefault();
     alert('Заполните все поля!');
+    
     // console.log('введите имя и почту и текст письма');
   } else {
     localStorage.setItem('name', modalName.value);
