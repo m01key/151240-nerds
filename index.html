@@ -5,24 +5,20 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
   
 <!--  начало хэдер-->
   <header class="index-header header">
     <div class="container">
-
       <div class="top clearfix">
-
         <div class="logo">
           <a href="index.html">
             <img src="img/index/logo.png" alt="логотип" width="160" height="65">
           </a>
         </div>
-
         <nav class="main-nav">
           <ul>
             <li><a class="active" href="#">студия</a></li>
@@ -31,29 +27,19 @@
             <li><a href="#">контакты</a></li>
           </ul>
         </nav>
-
         <div class="cart">
           <a href="#">корзина</a>
         </div>
-
       </div>
-    
-
-<!-- =========== слайдер ============== -->
-
-
       <div class="slider">
-
         <input type="radio" id="btn1" name="slides" checked>
         <input type="radio" id="btn2" name="slides">
         <input type="radio" id="btn3" name="slides">
-
         <div class="controls">
           <label for="btn1"></label>
           <label for="btn2"></label>
           <label for="btn3"></label>
         </div>
-
         <div class="slides">
           <div class="slide">
             <div class="text">
@@ -80,11 +66,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
-<!-- =========== слайдер ============== -->
-
     </div>
   </header>
 <!--  конец хэдер-->
@@ -162,10 +144,8 @@
 
 <!--  начало футер-->
   <footer class="index-footer">
-
     <div class="contacts">       
       <div class="map" >
-<!--           <img src="img/index/ph-map.png" alt="интерактивная карта" width="1440" height="416"> -->
       </div>
       <div class="write_us">
         <h3>NЁRDS DESIGN STUDIO</h3>
@@ -193,37 +173,32 @@
 <!--  конец футер-->
 
 <!--  начало модальное окно-->
-    <div class="modal">
-      <i></i>
-      <form action="action">
-
-        <fieldset>
-          <legend>Напишите нам</legend>
-
-          <div class="name-mail clearfix">
-            <div class="name">
-              <label for="name">Ваше имя:</label>
-              <input id="name" type="text" placeholder="Представьтесь, пожалуйста">      
-            </div>
-          
-            <div class="mail">
-              <label for="mail">Ваш e-mail:</label>
-              <input id="mail" type="email" placeholder="Для отправки ответа">
-            </div>
+  <div class="overlay"></div>
+  <div class="modal">
+    <i></i>
+    <form action="action">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <div class="name-mail clearfix">
+          <div class="name">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
+          </div>   
+          <div class="mail">
+            <label for="mail">Ваш e-mail:</label>
+            <input id="mail" type="email" placeholder="Для отправки ответа" >
           </div>
-
-          <div class="text">
-            <label for="textarea">Текст письма:</label>
-            <textarea id="textarea" placeholder="В свободной форме"></textarea>
-          </div>
-
-        </fieldset>
-
-        <button class="btn" type="submit">Отправить</button>
-
-      </form>
-    </div>
+        </div>
+        <div class="text">
+          <label for="textarea">Текст письма:</label>
+          <textarea id="textarea" placeholder="В свободной форме"></textarea>
+        </div>
+      </fieldset>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+  </div>
 <!--  конец модальное окно -->
-
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.min.js"></script>
   </body>
 </html>

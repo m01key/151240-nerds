@@ -5,8 +5,8 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
   </head>
   <body>
   
@@ -32,7 +32,6 @@
           <a href="#">корзина</a>
         </div>
       </div>
-
       <div class="down">
         <h1>Магазин готовых шаблонов</h1>
       </div>
@@ -47,10 +46,6 @@
     
       <aside class="filter">
         <form action="action">
-
-
-<!--  \/ \/ \/ \/ \/ \/ \/   ФИЛЬТР   \/ \/ \/ \/ \/ \/   -->
-
           <fieldset class="price">
             <legend>стоимость:</legend>
             <div class="range-toggles">
@@ -113,14 +108,9 @@
               </li>
             </ul>
           </fieldset>
-
           <button class="submit" type="submit">показать</button>
         </form>
       </aside>
-
-  <!--  /\ /\ /\ /\ /\ /\   ФИЛЬТР   /\ /\ /\ /\ /\ /\   -->
-
-<!--  \/ \/ \/ \/ \/ \/ \/   ШАБЛОНЫ   \/ \/ \/ \/ \/ \/   -->
 
       <section class="templates">
         <div class="sort clearfix">
@@ -140,7 +130,6 @@
           <article class="template">
             <span><i></i> <i></i> <i></i></span>
             <img src="img/catalog/img-sedona.jpg" alt="sedona" width="360" height="576">
-
             <div class="template-price">
               <h3>
                 <a href="#">sedona</a>
@@ -148,7 +137,6 @@
               <p>Информационный сайт для туристов</p>
               <a class="btn" href="#">9900 руб.</a>
             </div>
-
           </article>
           <article class="template">
             <span><i></i> <i></i> <i></i></span>
@@ -207,9 +195,6 @@
           </article>
         </div>
         
-<!--  /\ /\ /\ /\ /\ /\   ШАБЛОНЫ   /\ /\ /\ /\ /\ /\   -->
-
-
         <div class="paginator">
           <a class="active">1</a>
           <a href="#">2</a>
@@ -224,10 +209,8 @@
 
 <!--  начало футер-->
   <footer class="index-footer">
-
     <div class="contacts">       
       <div class="map" >
-<!--           <img src="img/index/ph-map.png" alt="интерактивная карта" width="1440" height="416"> -->
       </div>
       <div class="write_us">
         <h3>NЁRDS DESIGN STUDIO</h3>
@@ -255,37 +238,32 @@
 <!--  конец футер-->
 
 <!--  начало модальное окно-->
-    <div class="modal">
-      <i></i>
-      <form action="action">
-
-        <fieldset>
-          <legend>Напишите нам</legend>
-
-          <div class="name-mail clearfix">
-            <div class="name">
-              <label for="name">Ваше имя:</label>
-              <input id="name" type="text" placeholder="Представьтесь, пожалуйста">      
-            </div>
-          
-            <div class="mail">
-              <label for="mail">Ваш e-mail:</label>
-              <input id="mail" type="email" placeholder="Для отправки ответа">
-            </div>
+  <div class="overlay"></div>
+  <div class="modal">
+    <i></i>
+    <form action="action">
+      <fieldset>
+        <legend>Напишите нам</legend>
+        <div class="name-mail clearfix">
+          <div class="name">
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" placeholder="Представьтесь, пожалуйста">
+          </div>   
+          <div class="mail">
+            <label for="mail">Ваш e-mail:</label>
+            <input id="mail" type="email" placeholder="Для отправки ответа" >
           </div>
-
-          <div class="text">
-            <label for="textarea">Текст письма:</label>
-            <textarea id="textarea" placeholder="В свободной форме"></textarea>
-          </div>
-
-        </fieldset>
-
-        <button class="btn" type="submit">Отправить</button>
-
-      </form>
-    </div>
+        </div>
+        <div class="text">
+          <label for="textarea">Текст письма:</label>
+          <textarea id="textarea" placeholder="В свободной форме"></textarea>
+        </div>
+      </fieldset>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+  </div>
 <!--  конец модальное окно -->
- 
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.min.js"></script>
   </body>
 </html>
