@@ -344,7 +344,7 @@ fieldset {
 }
 
 .services {
-  margin-bottom: 75px;
+  margin-bottom: 83px;
   /*outline: 1px solid yellow;*/
 }
 
@@ -434,7 +434,8 @@ fieldset {
 }
 
 .about_us {
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+  border-top: 2px solid #eee;
   /*outline: 1px solid yellow;*/
 }
 
@@ -442,7 +443,7 @@ fieldset {
   float: left;
   width: 660px;
   margin-right: 40px;
-  padding-top: 60px;
+  padding-top: 55px;
 
   text-transform: none;
   /*outline: 1px solid orange;*/
@@ -452,10 +453,16 @@ fieldset {
   margin-bottom: 38px;
 }
 
-.about_us .left p b {
+.about_us .left p:nth-child(1) b {
+  margin: 0;
+  padding: 0;
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
+}
+
+.about_us .left p:nth-child(2) {
+  margin-top: -5px;
 }
 
 .about_us .left p:nth-child(3) {
@@ -466,13 +473,14 @@ fieldset {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+
 }
 
 .about_us .left .text {
   position: relative;
 
   margin-bottom: 24px;
-  padding-left: 40px;
+  padding-left: 35px;
 
   font-size: 16px;
   line-height: 24px;
@@ -496,7 +504,7 @@ fieldset {
 .about_us .right {
   float: right;
   width: 360px;
-  padding-top: 50px;
+  padding-top: 40px;
   /*outline: 1px solid orange;*/
 }
 
@@ -538,32 +546,55 @@ fieldset {
 }
 
 .clients {
-  margin-bottom: 30px;
-
+  border-top: solid 2px #eee;
+  border-bottom: solid 2px #eee;
+  padding: 45px 0;
   font-size: 0;
-  /*outline: 1px solid yellow;*/
+
+  /*outline: 1px solid red;*/
 }
 
 .client {
+  position: relative;
   display: inline-block;
   width: 260px;
   margin-right: 40px;
-
-  text-align: center;
   vertical-align: middle;
 
+  /*outline: 1px solid green;*/
+}
+
+.client img {
+  display: block;
+  margin: 0 auto;
   opacity: 0.2;
+}
+
+.client::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50px;
+  right: -20px;
+  top: 50%;
+  margin-top: -25px;
+  background-color: #eee;
+}
+
+.client:last-child::after {
+  display: none;
 }
 
 .client:last-child {
   margin-right: 0;
+  padding-right: 0;
 }
 
-.client:hover {
+.client:hover img {
   opacity: 1;
 }
 
-.client:active {
+.client:active img {
   opacity: 0.1;
 }
 
@@ -591,7 +622,7 @@ fieldset {
 .contacts .write_us {
   position: absolute;
   top: 55px;
-  left: 55px;
+  left: 50px;
 
   width: 220px;
   padding: 47px 50px;
@@ -741,7 +772,7 @@ fieldset {
 }
 
 .catalog-main {
-  padding: 57px 0 60px;
+  padding: 60px 0 60px;
   /*outline: 1px solid red;*/
 }
 
@@ -771,7 +802,8 @@ legend {
 }
 
 .price legend {
-  margin-bottom: 47px;
+  margin-bottom: 45px;
+
 }
 
 .range-toggles {
@@ -1065,6 +1097,7 @@ legend {
   line-height: 18px;
 }
 
+
 .sort .right a {
   margin-right: 28px;
 
@@ -1072,15 +1105,15 @@ legend {
   font-weight: normal;
   line-height: 18px;
   text-decoration: none;
-
-  color: rgba(0,0,0,0.3);
+  opacity: 0.3;
+  color: #000;
 }
 
-.sort .right a:nth-of-type(3) {
+.sort .right a:nth-child(3) {
   margin-right: 48px;
 }
 
-.sort .right a:nth-of-type(4) {
+.sort .right a:nth-child(4) {
   margin-right: 18px;
 }
 
@@ -1096,7 +1129,7 @@ legend {
   color: rgba(0,0,0,1);
 }
 
-.sort .down {
+.sort .right .down {
   display: inline-block;
   width: 9px;
   height: 9px;
@@ -1108,7 +1141,11 @@ legend {
   background-position: -20px -366px;
 }
 
-.sort .up {
+.sort .right .active {
+  opacity: 1;
+}
+
+.sort .right .up {
   display: inline-block;
   width: 9px;
   height: 9px;
