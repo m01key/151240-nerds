@@ -109,8 +109,6 @@ fieldset {
 .logo {
   float: left;
   display: block;
-  /*width: 160px;*/
-  /*height: 65px;*/
   margin-right: 200px;
   padding-top: 50px;
 
@@ -836,8 +834,6 @@ legend {
 /*outline: 1px solid green;*/
 }
 
-
-/*  \/ \/ \/ \/ \/ \/ \/  часть формы  \/ \/ \/ \/ \/ \/ \/  */
  
 .grid legend,
 .features legend {
@@ -974,9 +970,6 @@ legend {
 }
 
 
-/*  /\ /\ /\ /\ /\ /\ /\  часть формы   /\ /\ /\ /\ /\ /\   */
-
-
 .submit {
   display: inline-block;
   width: 100%;
@@ -1006,7 +999,6 @@ legend {
   /*outline: 1px solid yellow;*/
 }
 
-/* ---- сортировка ---- */
 
 .sort {
   margin-bottom: 60px;
@@ -1095,7 +1087,6 @@ legend {
   opacity: 1;
 }
 
-/* ----- список шаблонов ----- */
 
 .template-list {
   font-size: 0;
@@ -1214,14 +1205,10 @@ legend {
   box-shadow: inset 0 3px #c13135;
 }
 
-/* ---- пагинация ---- */
 
 .paginator {
   font-size: 0;
   margin-top: 60px;
-  /*vertical-align: top;*/
-  /*text-align: center;*/
-  /*outline: 1px solid orange;*/
 }
 
 .paginator a {
@@ -1241,7 +1228,7 @@ legend {
   border-radius: 3px; 
 }
 
-/* здесь я поставил для активной страницы приоритет выше чем над другими страницами. есть ли другой способ? разобраться*/
+
 .templates .paginator .active {
   border: 3px solid #dbdbdb;
   background-color: #fff;
@@ -1268,7 +1255,7 @@ legend {
 
 .modal {
   position: fixed;
-  /*display: none;*/
+  display: none;
   width: 760px;
   margin-left: -480px;
   text-transform: none;
@@ -1277,7 +1264,26 @@ legend {
   left: 50%;
   background-color: #fff;
   box-shadow: 0 25px 60px rgba(0,0,0,0.75);
-  /*margin: 0 auto;*/
+  /*z-index: 1000;*/
+}
+
+.modal-open {
+  display: block;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  /*z-index: 10; */
+}
+
+.overlay-open {
+  display: block;
 }
 
 .modal i::before,
@@ -1289,6 +1295,7 @@ legend {
   top: 70px;
   right: 100px;
   background-color: rgba(251,86,90,0.3);
+  cursor: pointer;
 }
 
 .modal i::before {
@@ -1330,16 +1337,7 @@ legend {
 .modal .name-mail {
   font-size: 0;
   margin-bottom: 34px;
-  /*outline: 1px solid green;*/
-
 }
-
-/*.modal .name-mail .mail,
-.modal .name-mail .name {
-  display: inline-block;
-  width: 50%;
-  outline: 1px solid red;
-}*/
 
 .modal .name-mail .name {
   float: left;
@@ -1402,6 +1400,7 @@ border: solid 2px #000;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .modal .btn:hover {
@@ -1413,72 +1412,3 @@ border: solid 2px #000;
   background-color: #d7373b;
   color: rgba(255,255,255,0.3);
 }
-
-
-
-
-/* ======== спрайты ========= */
-
-
-/*
-.sprite {
-    background-image: url(../img/index/spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-ic-cart {
-    width: 15px;
-    height: 15px;
-    background-position: -20px -20px;
-}
-
-.sprite-ic-checkbox-off {
-    width: 23px;
-    height: 23px;
-    background-position: -20px -75px;
-}
-
-.sprite-ic-checkbox-on {
-    width: 27px;
-    height: 23px;
-    background-position: -20px -138px;
-}
-
-.sprite-ic-fb {
-    width: 12px;
-    height: 22px;
-    background-position: -20px -201px;
-}
-
-.sprite-ic-insta {
-    width: 21px;
-    height: 21px;
-    background-position: -20px -263px;
-}
-
-.sprite-ic-redline {
-    width: 25px;
-    height: 2px;
-    background-position: -20px -324px;
-}
-
-.sprite-ic-sort-down {
-    width: 9px;
-    height: 9px;
-    background-position: -20px -366px;
-}
-
-.sprite-ic-sort-up {
-    width: 9px;
-    height: 9px;
-    background-position: -20px -415px;
-}
-
-.sprite-ic-vk {
-    width: 26px;
-    height: 15px;
-    background-position: -20px -464px;
-}
-*/
-
