@@ -435,7 +435,8 @@ fieldset {
 
 .about_us {
   margin-bottom: 30px;
-  border-top: 2px solid #eee;
+
+  border-top: 2px solid #eeeeee;
   /*outline: 1px solid yellow;*/
 }
 
@@ -456,6 +457,7 @@ fieldset {
 .about_us .left p:nth-child(1) b {
   margin: 0;
   padding: 0;
+
   font-size: 45px;
   font-weight: 500;
   line-height: 45px;
@@ -473,7 +475,6 @@ fieldset {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-
 }
 
 .about_us .left .text {
@@ -546,39 +547,44 @@ fieldset {
 }
 
 .clients {
-  border-top: solid 2px #eee;
-  border-bottom: solid 2px #eee;
   padding: 45px 0;
+
   font-size: 0;
 
+  border-top: solid 2px #eeeeee;
+  border-bottom: solid 2px #eeeeee;
   /*outline: 1px solid red;*/
 }
 
 .client {
   position: relative;
+
   display: inline-block;
   width: 260px;
   margin-right: 40px;
-  vertical-align: middle;
 
+  vertical-align: middle;
   /*outline: 1px solid green;*/
 }
 
 .client img {
   display: block;
   margin: 0 auto;
+
   opacity: 0.2;
 }
 
 .client::after {
-  content: "";
+  content: '';
   position: absolute;
+  top: 50%;
+  right: -20px;
+
   width: 2px;
   height: 50px;
-  right: -20px;
-  top: 50%;
   margin-top: -25px;
-  background-color: #eee;
+
+  background-color: #eeeeee;
 }
 
 .client:last-child::after {
@@ -803,7 +809,6 @@ legend {
 
 .price legend {
   margin-bottom: 45px;
-
 }
 
 .range-toggles {
@@ -1105,8 +1110,9 @@ legend {
   font-weight: normal;
   line-height: 18px;
   text-decoration: none;
+
   opacity: 0.3;
-  color: #000;
+  color: #000000;
 }
 
 .sort .right a:nth-child(3) {
