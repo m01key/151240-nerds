@@ -62,4 +62,48 @@ form.addEventListener('submit', function(e) {
   }
 });
 
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('ya-map', {
+          center: [59.938631, 30.323055],
+          zoom: 16
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Nёrds',
+          balloonContent: '191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8'
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/index/ic-map-marker.png',
+          // Размеры метки.
+          iconImageSize: [231, 190],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-50, -190]
+      });
+  myMap.geoObjects.add(myPlacemark);
+  myMap.behaviors.disable('scrollZoom');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -5,7 +5,6 @@ body {
   font-weight: normal;
   line-height: 24px;
   text-transform: uppercase;
-
   color: #283136;
 }
 
@@ -60,6 +59,7 @@ fieldset {
 
 .header {
   background: #eeeeee;
+  min-width: 1180px;
   /*outline: 1px solid red;*/
 }
 
@@ -175,10 +175,6 @@ fieldset {
 
 .index-header {
   height: 546px;
-}
-
-.catalog-header {
-  height: 355px;
 }
 
 .catalog-header .down {
@@ -611,19 +607,14 @@ fieldset {
 .index-footer .map {
   max-width: 1440px;
   height: 416px;
-  margin: 0 auto;
+  text-transform: none;
 
   background: url(../img/index/ph-map.png) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-}
 
-/*.index-footer .map img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}*/
+  /*outline: 1px solid red;*/
+}
 
 .contacts .write_us {
   position: absolute;
